@@ -409,6 +409,8 @@ export default function AgentsPage() {
 
   const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
+console.log("🚀 API URL:", API);
+
   const handlePreviewVoice = async (voiceId, model, language) => {
     setPreviewLoading(true);
     try {
